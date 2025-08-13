@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Contact Jama Industries for quotes, support, or general inquiries." />
+    <title>Contact — Jama Industries</title>
+    <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script defer src="assets/js/main.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Jama Industries home">
+          <img src="assets/img/logo.svg" alt="Jama Industries logo" width="36" height="36" />
+          <span class="brand-name">Jama Industries</span>
+        </a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Primary">
+          <ul>
+            <li><a href="index.html" data-nav="home">Home</a></li>
+            <li><a href="about.html" data-nav="about">About</a></li>
+            <li><a href="services.html" data-nav="services">Services</a></li>
+            <li><a href="contact.html" data-nav="contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="content" tabindex="-1">
+      <section class="page-hero">
+        <div class="container">
+          <h1>Contact</h1>
+          <p>Request a quote, schedule a consultation, or ask a question.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container grid two contact-grid">
+          <div>
+            <h2>Send a message</h2>
+            <form id="contact-form" novalidate>
+              <div class="form-row">
+                <label for="name">Full name</label>
+                <input id="name" name="name" type="text" autocomplete="name" required />
+                <span class="error" data-for="name"></span>
+              </div>
+              <div class="form-row">
+                <label for="company">Company</label>
+                <input id="company" name="company" type="text" autocomplete="organization" />
+              </div>
+              <div class="form-row">
+                <label for="email">Work email</label>
+                <input id="email" name="email" type="email" autocomplete="email" required />
+                <span class="error" data-for="email"></span>
+              </div>
+              <div class="form-row">
+                <label for="phone">Phone</label>
+                <input id="phone" name="phone" type="tel" autocomplete="tel" />
+              </div>
+              <div class="form-row">
+                <label for="service">Interested in</label>
+                <select id="service" name="service" required>
+                  <option value="" selected disabled>Select a service</option>
+                  <option>Precision Manufacturing</option>
+                  <option>Automation & Controls</option>
+                  <option>Electrical & Panel Build</option>
+                  <option>Installation & Commissioning</option>
+                  <option>Other</option>
+                </select>
+                <span class="error" data-for="service"></span>
+              </div>
+              <div class="form-row">
+                <label for="message">Project details</label>
+                <textarea id="message" name="message" rows="6" required placeholder="Briefly describe your goals, constraints, timeline, and budget."></textarea>
+                <span class="error" data-for="message"></span>
+              </div>
+
+              <input type="text" name="company_website" id="company_website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+              <div class="form-actions">
+                <button class="btn btn-primary" type="submit">Send message</button>
+                <p class="form-status" role="status" aria-live="polite"></p>
+              </div>
+            </form>
+          </div>
+          <div>
+            <h2>Other ways to reach us</h2>
+            <div class="contact-cards">
+              <div class="card">
+                <h3>Email</h3>
+                <p><a href="mailto:hello@jamaindustries.com">hello@jamaindustries.com</a></p>
+              </div>
+              <div class="card">
+                <h3>Phone</h3>
+                <p><a href="tel:+10000000000">+1 (000) 000-0000</a></p>
+              </div>
+              <div class="card">
+                <h3>Hours</h3>
+                <p>Mon–Fri, 8:00–18:00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html">
+            <img src="assets/img/logo.svg" alt="Jama Industries logo" width="28" height="28" />
+            <span class="brand-name">Jama Industries</span>
+          </a>
+          <p class="footer-tagline">Dependable engineering. Measurable results.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer">
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <address class="footer-contact">
+          <div>Email: <a href="mailto:hello@jamaindustries.com">hello@jamaindustries.com</a></div>
+          <div>Phone: <a href="tel:+10000000000">+1 (000) 000-0000</a></div>
+          <div>Mon–Fri, 8:00–18:00</div>
+        </address>
+      </div>
+      <div class="container footer-bottom">
+        <p>© <span id="year"></span> Jama Industries. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
